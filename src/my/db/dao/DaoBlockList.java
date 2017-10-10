@@ -11,20 +11,21 @@ import my.db.obj.BlockList;
 
 public class DaoBlockList extends DaoBase<BlockList>
 {
+	
 	public enum BlockType
 	{
 		NoThing(0),
 		/*
-		 * Không xử lý MO 
+		 * KhÃ´ng xá»­ lÃ½ MO 
 		 */
 		NoProcessMO(1), 
 		/**
-		 * Không nằm trong danh sách PushMT
+		 * KhÃ´ng náº±m trong danh sÃ¡ch PushMT
 		 */
 		NotPushMT(2),
 		
 		/**
-		 * Được free charge cho đăng ký, hoặc gia hạn
+		 * Ä�Æ°á»£c free charge cho Ä‘Äƒng kÃ½, hoáº·c gia háº¡n
 		 */
 		FreeCharge(3),
 		;
